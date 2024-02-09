@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Blaze Pizzeria</h1>
+        <form>
+            <fieldset>
+                <legend>Customer:</legend>
+                <div class="row">
+                    <div>
+                        <label for="firstname">First</label>
+                        <input id="firstname" name="first_name" type="text">
+                    </div>
+                    <div>
+                        <label for="lastname">Last</label>
+                        <input id="lastname" name="last_name" type="text">
+                    </div>
+                    <div>
+                        <label for="Address">Address</label>
+                        <input id="Address" name="Address" type="text">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="row">
+                <fieldset>
+                    <legend>Toppings:</legend>
+                    <div>
+                        <input type="radio" id="Pepperoni" name="pizza">
+                        <label for="Pepperoni">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Pineapple" name="pizza">
+                        <label for="Pineapple">Pineapple</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Green Peppers" name="pizza">
+                        <label for="Green Peppers">Green Peppers</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Black Olives" name="pizza">
+                        <label for="Black Olives">Black Olives</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Sausage" name="pizza">
+                        <label for="Sausage">Sausage</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Size:</legend>
+                    <div>
+                        <input type="radio" id="small" name="size">
+                        <label for="small">Small</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="size">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large" name="size">
+                        <label for="large">Large</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Extra Large" name="size">
+                        <label for="Extra Large">XL</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Family Size" name="size">
+                        <label for="Family Size">Family</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Sides:</legend>
+                    <div>
+                        <input type="checkbox" id="Pasta" name="Pasta" value="Pasta">
+                        <label for="Pasta">Pasta</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Bread sticks" name="Bread sticks" value="Bread sticks">
+                        <label for="Bread sticks">Bread Sticks</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Stuffed Cheesy Bread" name="Stuffed Cheesy Bread" value="Stuffed Cheesy Bread">
+                        <label for="Stuffed Cheesy Bread">Stuffed Cheesy Bread</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Chicken Salad" name="Chicken Salad" value="Chicken Salad">
+                        <label for="Chicken Salad">Chicken Salad</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Cheesy Marinara Dip" name="Cheesy Marinara Dip" value="Cheesy Marinara Dip">
+                        <label for="Cheesy Marinara Dip">Cheesy Marinara Dip</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Sauces:</legend>
+                    <div>
+                        <input type="checkbox" id="Hot Buffalo" name="Hot Buffalo" value="Hot Buffalo">
+                        <label for="Hot Buffalo">Hot Buffalo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Sweet Mango Habanero" name="Sweet Mango Habanero" value="Sweet Mango Habanero">
+                        <label for="Sweet Mango Habanero">Sweet Mango Habanero</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Honey BBQ" name="Honey BBQ" value="Honey BBQ">
+                        <label for="Honey BBQ">Honey BBQ</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Ranch" name="Ranch" value="Ranch">
+                        <label for="Ranch">Ranch</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Marinara" name="Marinara" value="Marinara">
+                        <label for="Marinara">Marinara</label>
+                    </div>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend>Crust:</legend>
+                <label for="container">Please Choose One</label>
+                <select name="container" id="container">
+                    <option value="Hand Tossed">Hand Tossed</option>
+                    <option value="Handmade Pan">Handmade Pan</option>
+                    <option value="Crunchy Tin Crust">Crunchy Tin Crust</option>
+                    <option value="Brooklyn Style">Brooklyn Style</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Drinks:</legend>
+                <label for="container">Please Choose One</label>
+                <select name="container" id="container">
+                    <option value="Pepsi">Pepsi</option>
+                    <option value="Sprite">Sprite</option>
+                    <option value="7up">7up</option>
+                    <option value="Coca Cola">Coca Cola</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Special:</legend>
+                <label for="SpecialRequests">Special Requests:</label>
+                <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="10"
+                          placeholder="Allergic to peanuts, substitutions, etc."></textarea>
+            </fieldset>
+            <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+</body>
+</html>
